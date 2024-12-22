@@ -1,0 +1,9 @@
+[Unit]
+Description=Watchdog Service
+[Service]
+ExecStart=/usr/bin/python3 /home/raziyenur/bsm/logs/log_controller.py
+Restart=always
+User=raziyenur
+WorkingDirectory=/home/raziyenur/bsm/logs
+[Install]
+WantedBy=multi-user.target
